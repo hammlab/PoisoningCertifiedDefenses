@@ -18,10 +18,14 @@ For the models trained with these robust training methods our attack points redu
 <li> The "models" folder contains code for the keras based models used in the work.</li>
 
 </ol>
+
 <hr>
+
 ### Generating the datasets:
 For MNIST we randomly sample 55000 points and 5000 points for the training and validation sets and save them as "X_train.npy", "Y_train.npy" and "X_val.npy" ,"Y_val.npy" in the folder name "data". Similarly for CIFAR10 we randomly samle 45000 and 5000 points as training and validation data. The test sets of both the datasets contain 10000 points and are the standard test sets. These datasets are used in all the experiements.
+
 <hr>
+
 ### Poison Generation
 To generate the poison data against a particular robust training procedure and the dataset, navigate to the appropriate folder in "attack_generation" folder and run the python file. For example, to generate poisoned data against Gaussian data augmentation on MNIST, use the following commands.<br>
 	<ol>
@@ -31,7 +35,9 @@ To generate the poison data against a particular robust training procedure and t
 	</ol>
 The poison data will be generated and placed in the folder "data". This data will generated considering the class 8 as the target class. To target a differnet class, change the parameter "target_class" in poison_radius_gaussianaug.py.<br><br>
 *Poison data for other training procedures and datasets can be generated similarly.*
+
 <hr>
+
 ### Evaluation
 To evaluate the effect of poisoning, a model trained from scratch on the generated poison data and robust training procedure is used. To obtain this model, navidate to the appropriate folder based on the training method and dataset to be used in the "evaluation" folder. For example to test the effect of poisoning against Gaussian data augmentation on MNIST, use the following steps.
 	<ol>
