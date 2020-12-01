@@ -1,6 +1,15 @@
 ## How Robust are Randomized Smoothing based Defenses to Data Poisoning?
 
-### The codes used to run the experiments to report the results in the paper are present in this repository. The code is divided into contains 3 main folders. 
+### Abstract
+The prediction of certifiably robust classifiers remains constant around a neighborhood of a point, making them resilient to test-time attacks with a guarantee. 
+In this work, we present a previously unrecognized threat to robust machine learning models that highlights the importance of training-data quality in achieving high certified robustness. Specifically, we propose a novel bilevel optimization based data poisoning attack that degrades the robustness guarantees of certifiably robust classifiers.
+Unlike other data poisoning attacks that reduce the accuracy of the poisoned models on a small set of target points, our attack reduces the average certified radius of an entire target class in the dataset. Moreover, our attack is effective even when the victim trains the models from scratch using state-of-the-art robust training methods such as Gaussian data augmentation\cite{cohen2019certified}, MACER\cite{zhai2020macer}, and SmoothAdv\cite{zhai2020macer}.
+To make the attack harder to detect we use clean-label poisoning points with imperceptibly small distortions. The effectiveness of the proposed method is evaluated by poisoning MNIST and CIFAR10 datasets and training deep neural networks using the previously mentioned robust training methods and certifying their robustness using randomized smoothing. 
+For the models trained with these robust training methods our attack points reduce the average certified radius of the target class by more than 30\% and are transferable to models with different architectures and models trained with different robust training methods.
+
+<hr>
+
+### The codes used to report the results in the paper are present in this repository. The code is divided into contains 3 main folders. 
 <ol>
 <li> The "attack_generation" folder contains the code to run the data poisning experiments which generate the poisoned data against different robust training procedures. Each subfolder in this folder contains code to generate poison data against a robust training procedure on MNIST and CIFAR10 datasets. The code for ApproxGrad algorithm to solve the bilevel optimization is present in the folder "bilevel_optimizer".</li>
 
@@ -33,3 +42,12 @@ To evaluate the effect of poisoning, a model trained from scratch on the generat
 	<li>Finally to obtain the certified radius and certified accuracy, run the code "python3 certify_mnist.py", present in "randomized_smoothing_certification" by changing the model path to the location of the generated poisoned model. The certification code will return the average certified radius and approximate certified test accuracy of the poisoned model on 500 randomly smapled points of the target class from the test set.</li>
 	</ol>
 *Evaluation of models trained on different datasets and using different robust training procedures can be obtained similarly.* 
+
+<hr>
+#### Citing
+If you use this package please cite
+<pre>
+<code>
+
+</code>
+</pre>
