@@ -24,7 +24,7 @@ The poison data will be generated and placed in the folder "data". This data wil
 *Poison data for other training procedures and datasets can be generated similarly.*
 
 ### Evaluation
-To evaluate the effect of poisoning, a model trained from scratch on the generated poison data and robust training procedure is used. To obtain this model, navidate to the appropriate folder based on the training method and dataset to be used in the "evaluation" folder. For example to test the effect of poisoning against Gaussian data augmentation on MNIST, use the following steps.<br><br>
+To evaluate the effect of poisoning, a model trained from scratch on the generated poison data and robust training procedure is used. To obtain this model, navidate to the appropriate folder based on the training method and dataset to be used in the "evaluation" folder. For example to test the effect of poisoning against Gaussian data augmentation on MNIST, use the following steps.
 	<ol>
 	<li>Navigate to "evaluation\MNIST".</li>
 	<li>Create a folder called "data" and place the generated poisoned data along with clean daat in the folder.</li>
