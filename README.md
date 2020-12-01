@@ -9,7 +9,7 @@ For the models trained with these robust training methods our attack points redu
 
 <hr>
 
-### The codes used to report the results in the paper are present in this repository. The code is divided into contains 3 main folders. 
+### The codes used to report the results in the paper <b>"[How Robust are Randomized Smoothing based Defenses to Data Poisoning?](https://arxiv.org/pdf/1911.03432.pdf)"</b> are present in this repository. The code is divided into contains 3 main folders. 
 <ol>
 <li> The "attack_generation" folder contains the code to run the data poisning experiments which generate the poisoned data against different robust training procedures. Each subfolder in this folder contains code to generate poison data against a robust training procedure on MNIST and CIFAR10 datasets. The code for ApproxGrad algorithm to solve the bilevel optimization is present in the folder "bilevel_optimizer".</li>
 
