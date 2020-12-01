@@ -37,7 +37,8 @@ For the models trained with these robust training methods our attack points redu
 	<li>Run the command "python3 poison_radius_gaussianaug.py".</li>
 	</ol>
 <p align = justify>The poison data will be generated and placed in the folder "data". This data will generated considering the class 8 as the target class. To target a differnet class, change the parameter "target_class" in poison_radius_gaussianaug.py.<br><br>
-*Poison data for other training procedures and datasets can be generated similarly.*
+
+<i>Poison data for other training procedures and datasets can be generated similarly.</i>
 
 <hr>
 
@@ -50,7 +51,7 @@ For the models trained with these robust training methods our attack points redu
 	<li><p align = justify>This command will generate a model trained on the poisoned data and place it in the folder "Models". To generate data trained only on clean data, change the parameter "dataset" in the file "gaussian_augmented_training.py".</li>
 	<li><p align = justify>Finally to obtain the certified radius and certified accuracy, run the code "python3 certify_mnist.py", present in "randomized_smoothing_certification" by changing the model path to the location of the generated poisoned model. The certification code will return the average certified radius and approximate certified test accuracy of the poisoned model on 500 randomly smapled points of the target class from the test set.</li>
 	</ol>
-*Evaluation of models trained on different datasets and using different robust training procedures can be obtained similarly.* 
+<i>Evaluation of models trained on different datasets and using different robust training procedures can be obtained similarly.</i>
 
 <hr>
 
