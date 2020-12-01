@@ -36,7 +36,7 @@ For the models trained with these robust training methods our attack points redu
 	<li>Create a folder called "data" and place the generated data in the folder.</li>
 	<li>Run the command "python3 poison_radius_gaussianaug.py".</li>
 	</ol>
-<p align = justify>The poison data will be generated and placed in the folder "data". This data will generated considering the class 8 as the target class. To target a differnet class, change the parameter "target_class" in poison_radius_gaussianaug.py.<br><br>
+<p align = justify>The poison data will be generated and placed in the folder "data". This data will generated considering the class 8 as the target class. To target a differnet class, change the parameter "target_class" in poison_radius_gaussianaug.py.
 
 <i>Poison data for other training procedures and datasets can be generated similarly.</i>
 
