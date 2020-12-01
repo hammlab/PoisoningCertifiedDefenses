@@ -16,7 +16,6 @@ To generate the poison data against a particular robust training procedure and t
 	2. Create a folder called "data" and place the generated data in the folder.<br><br>
 	3. Run the command "python3 poison_radius_gaussianaug.py".<br><br>
 The poison data will be generated and placed in the folder "data". This data will generated considering the class 8 as the target class. To target a differnet class, change the parameter "target_class" in poison_radius_gaussianaug.py.<br><br>
-
 *Poison data for other training procedures and datasets can be generated similarly.*
 
 ##### Evaluation
