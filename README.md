@@ -44,7 +44,9 @@ To evaluate the effect of poisoning, a model trained from scratch on the generat
 *Evaluation of models trained on different datasets and using different robust training procedures can be obtained similarly.* 
 
 <hr>
+
 #### Citing
+
 If you use this package please cite
 <pre>
 <code>
