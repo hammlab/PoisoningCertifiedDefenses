@@ -47,7 +47,7 @@ For the models trained with these robust training methods our attack points redu
 	<li>Navigate to "evaluation\MNIST".</li>
 	<li>Create a folder called "data" and place the generated poisoned data along with clean daat in the folder.</li>
 	<li>Run the command "python3 gaussian_augmented_training.py".</li>
-	<li>T<p align = justify>his command will generate a model trained on the poisoned data and place it in the folder "Models". To generate data trained only on clean data, change the parameter "dataset" in the file "gaussian_augmented_training.py".</li>
+	<li><p align = justify>This command will generate a model trained on the poisoned data and place it in the folder "Models". To generate data trained only on clean data, change the parameter "dataset" in the file "gaussian_augmented_training.py".</li>
 	<li><p align = justify>Finally to obtain the certified radius and certified accuracy, run the code "python3 certify_mnist.py", present in "randomized_smoothing_certification" by changing the model path to the location of the generated poisoned model. The certification code will return the average certified radius and approximate certified test accuracy of the poisoned model on 500 randomly smapled points of the target class from the test set.</li>
 	</ol>
 *Evaluation of models trained on different datasets and using different robust training procedures can be obtained similarly.* 
