@@ -1,4 +1,4 @@
-# How Robust are Randomized Smoothing based Defenses to Data Poisoning?
+## How Robust are Randomized Smoothing based Defenses to Data Poisoning?
 
 ### The codes used to run the experiments to report the results in the paper are present in this repository. The code is divided into contains 3 main folders. 
 <ol>
