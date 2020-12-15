@@ -57,7 +57,7 @@ For the models trained with these robust training methods our attack points redu
 
 #### Citing
 
-If you use this package please cite
+If you find this useful for your work, please consider citing
 <pre>
 <code>
 @misc{mehra2020robust,
