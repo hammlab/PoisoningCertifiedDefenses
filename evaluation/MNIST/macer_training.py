@@ -118,7 +118,7 @@ robustness_loss_1 = tf.boolean_mask(dist.quantile((1 - 2*alpha) * top2_score[:,1
 
 needs_optimization = tf.less_equal(tf.abs(robustness_loss_1), gamma_macer)
 
-mask_2 = ~tf.math.is_nan(robustness_loss_1) & ~tf.math.is_nan(robustness_loss_1) & needs_optimization
+mask_2 = ~tf.math.is_nan(robustness_loss_1) & ~tf.math.is_inf(robustness_loss_1) & needs_optimization
 robustness_loss_2 = tf.boolean_mask(robustness_loss_1, mask_2)
 
 robustness_loss = tf.reduce_sum(robustness_loss_2 + gamma_macer) * sigma_macer * 0.5
