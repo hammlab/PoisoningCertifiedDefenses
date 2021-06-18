@@ -60,11 +60,13 @@ For the models trained with these robust training methods our attack points redu
 If you find this useful for your work, please consider citing
 <pre>
 <code>
-@article{mehra2020robust,
-  title={How Robust are Randomized Smoothing based Defenses to Data Poisoning?},
-  author={Mehra, Akshay and Kailkhura, Bhavya and Chen, Pin-Yu and Hamm, Jihun},
-  journal={arXiv preprint arXiv:2012.01274},
-  year={2020}
+@InProceedings{Mehra_2021_CVPR,
+    author    = {Mehra, Akshay and Kailkhura, Bhavya and Chen, Pin-Yu and Hamm, Jihun},
+    title     = {How Robust Are Randomized Smoothing Based Defenses to Data Poisoning?},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {13244-13253}
 }
 </code>
 </pre>
